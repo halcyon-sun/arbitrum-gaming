@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Arbitrum Arcade</title>
+  <style>
+    /* Reset some default browser styles (optional) */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Full-page container */
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      /* Placeholder for background image */
+      /* Replace 'background.jpg' with your actual file/path */
+      background: url("images/hubble.jpg") no-repeat center center / cover;
+      /* Gradient:
+         background: radial-gradient(circle at center, #0025ff, #f25b00 80%); 
+      */
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+    }
+
+    /* Title style */
+    h1 {
+      color: #ffffff;
+      font-size: 6rem;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Container for the game links */
+    .game-links {
+      display: flex;
+      padding-top: 20em;
+      gap: 2rem; /* spacing between the boxes */
+    }
+
+    /* Individual game link boxes */
+    .game-link {
+      display: flex;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.6); /* semi-transparent background */
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      text-decoration: none;
+      color: #000000;
+      transition: background-color 0.3s ease;
+    }
+
+    .game-link:hover {
+      background-color: rgba(3, 195, 54, 0.5); /* hover effect */
+    }
+
+    /* Logo image inside the link box */
+    .game-link img {
+      width: 40px;  /* adjust as needed */
+      height: auto;
+      margin-right: 0.75rem;
+    }
+
+    /* Game name text */
+    .game-title {
+      font-size: 1.2rem;
+      margin-right: 0.75rem;
+    }
+
+    /* Arrow symbol */
+    .arrow {
+      font-weight: bold;
+      font-size: 1.4rem;
+      transform: translateY(1px); /* small vertical centering adjustment */
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Arbitrum Arcade</h1>
+
+  <div class="game-links">
+    <!-- Box for "Tollan Worlds" -->
+    <a class="game-link" href="https://play.tollan.io/">
+      <img src="images/icons8-t-64.png" alt="Tollan Worlds Logo" />
+      <span class="game-title">Tollan Worlds</span>
+      <span class="arrow">&#9654;</span>
+    </a>
+
+    <!-- Box for "Pirate Nation" -->
+    <a class="game-link" href="https://piratenation.game/demo">
+      <img src="images/icons8-pirate-100.png" alt="Pirate Nation Logo" />
+      <span class="game-title">Pirate Nation</span>
+      <span class="arrow">&#9654;</span>
+    </a>
+  </div>
+
+</body>
+</html>
